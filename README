@@ -1,0 +1,37 @@
+ FLOW :
+
+note: All actions below must take place after creating :
+* AWS account
+* IAM user
+* IAM policy
+* IAM role
+
+------------------------------------------------------
+
+ AT FIRST :
+
+ the user enters our web app / web site.
+ the user is being asked weather he agrees to our SELLING PARTNER APP
+ to take control over his personal data, and perform actions on
+ his behalf as well.
+ in case access is granted, there are several actions that need to take
+ place by that order :
+
+ 1. The user is being re-directed to another page in our app
+ (which has been defined while creating the app, and
+ can be changed anytime).
+
+ 2. Selling Partner API uses query params to send us the user's oAuth code.
+ (once the user is being re-directed, client-side should send the oAuth code
+back to our server).
+
+ *** NOTE : oAuth code is a  TEMPORARY  code - it expires within a few moments.
+
+3. Our server sends the oAuth code and gets a REFRESH TOKEN in exchange from Selling Partner API.
+REFRESH TOKEN is permanent.
+Using this refresh token, we can access the client's data anytime.
+(Refresh token needs to be safe and sound along side the rest of the client's data).
+
+As for this moment, our server can access almost any data of the client.
+
+
