@@ -1,8 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+// const { refreshRoleCredentials } = require('./configurations');
 const app = express();
 app.use(bodyParser.json());
+
+
+
+require('dotenv').config();
 
 app.use(cors({
     origin: true,
@@ -16,6 +21,18 @@ app.use(require('./routes'));
 app.get('/', (req, res) => {
     res.send('server is running')
 });
+
+app.post('/auth/token',(req,res)=>{
+    res.send(res.json)
+})
+
+app.get('/auth/stsTokens',(req,res)=>{
+    res.send(res.json)
+})
+
+app.get('/marketplace/getMarketplace', (req,res)=>{
+    res.send(res.json)
+})
 
 
 /**

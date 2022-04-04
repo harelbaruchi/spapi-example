@@ -9,4 +9,10 @@ const router = require('express').Router();
 
 router.use('/auth', require('./auth'));
 
+router.use('/marketplace', require('./marketplace'));
+
+router.use('/fba', require('./fba'));
+
+
+
 module.exports = router;

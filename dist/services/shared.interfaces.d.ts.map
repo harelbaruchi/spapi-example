@@ -1,0 +1,1 @@
+{"version":3,"file":"shared.interfaces.d.ts","sourceRoot":"","sources":["../../src/services/shared.interfaces.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,cAAc;IAC9B,yBAAyB,EAAE,MAAM,CAAC;IAClC,6BAA6B,EAAE,MAAM,CAAC;IACtC,cAAc,EAAE,MAAM,CAAC;IACvB,kBAAkB,EAAE,MAAM,CAAC;IAC3B,qBAAqB,EAAE,MAAM,CAAC;CAC9B"}
